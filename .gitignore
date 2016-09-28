@@ -1,4 +1,7 @@
 .externalNativeBuild
+.idea/misc.xml
+.idea/modules.xml
+.idea/gradle.xml
 
 # Created by https://www.gitignore.io/api/android,macos,windows
 
