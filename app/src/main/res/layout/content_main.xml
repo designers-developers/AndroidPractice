@@ -13,8 +13,73 @@
     tools:context="ee.maytr.dnddemo.MainActivity"
     tools:showIn="@layout/app_bar_main">
 
-    <TextView
+    <LinearLayout
+        android:id="@+id/center_logo_wrapper"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dnd_logo"
+            android:contentDescription="@string/main_logo"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_logo_margin" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/top_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/center_logo_wrapper"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/main_logo_margin"
+        android:text="@string/main_description"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/main_description_text_size" />
+
+    <TextView
+        android:id="@+id/top_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/top_description"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/main_title_margin_bottom"
+        android:text="@string/main_title"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/main_title_text_size"
+        android:textStyle="bold" />
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/center_logo_wrapper"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_facebook"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_marginRight="@dimen/button_between_margin"
+            android:layout_marginEnd="@dimen/button_between_margin"
+            android:background="@drawable/facebook_logo" />
+
+        <Button
+            android:id="@+id/button_github"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:background="@drawable/github_logo" />
+
+    </LinearLayout>
+
 </RelativeLayout>
