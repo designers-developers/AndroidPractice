@@ -11,6 +11,7 @@
     <dimen name="main_title_margin_bottom">8dp</dimen>
     <dimen name="main_description_text_size">15sp</dimen>
 
+    <dimen name="main_logo_size">200dp</dimen>
     <dimen name="main_logo_margin">35dp</dimen>
 
     <dimen name="button_size">40dp</dimen>
