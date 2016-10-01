@@ -40,7 +40,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="@dimen/main_logo_margin"
         android:text="@string/main_description"
-        android:textColor="@color/colorAccent"
         android:textSize="@dimen/main_description_text_size" />
 
     <TextView
@@ -51,7 +50,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="@dimen/main_title_margin_bottom"
         android:text="@string/main_title"
-        android:textColor="@color/colorPrimaryDark"
         android:textSize="@dimen/main_title_text_size"
         android:textStyle="bold" />
 
